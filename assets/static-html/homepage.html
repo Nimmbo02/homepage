@@ -10,130 +10,344 @@
 
 <body>
     <!-- Start Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-        <a class="navbar-brand" href="#">
-            <img src="../images/logo.svg">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
 
-                <!-- الرئيسية -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">الرئيسية</a>
-                </li>
+                    <!-- الرئيسية -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">الرئيسية</a>
+                    </li>
 
-                <!-- الهيئة -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        الهيئة
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+                    <!-- الهيئة -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الهيئة
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
 
-                <!-- الإحصاءات -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">الإحصاءات</a>
-                </li>
+                    <!-- الإحصاءات -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">الإحصاءات</a>
+                    </li>
 
-                <!-- الخدمات -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        الخدمات
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+                    <!-- الخدمات -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الخدمات
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
 
-                <!-- التوعية -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">التوعية</a>
-                </li>
+                    <!-- التوعية -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">التوعية</a>
+                    </li>
 
-                <!-- الادلة والتصانيف -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        الادلة والتصانيف
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+                    <!-- الادلة والتصانيف -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الادلة والتصانيف
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
 
-                <!-- المركز الاعلامي -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        المركز الاعلامي
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+                    <!-- المركز الاعلامي -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            المركز الاعلامي
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
 
-                <!-- تواصل معنا -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        تواصل معنا
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+                    <!-- تواصل معنا -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            تواصل معنا
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
 
-                <!-- language -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        AR
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+                    <!-- language -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            AR
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
 
-                <!-- People Button -->
-                <li class="nav-item">
-                    <button >
-                        <img src="../images/people.svg" alt="sign in">
-                    </button>
-                </li>
+                    <!-- People Button -->
+                    <li class="nav-item">
+                        <button>
+                            <img src="../images/people.svg" alt="sign in">
+                        </button>
+                    </li>
 
-                <!-- Login Button -->
-                <li class="nav-item">
-                    <button class="btn-primary">
-                        تسجيل الدخول
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <!-- Login Button -->
+                    <li class="nav-item">
+                        <button class="btn-primary">
+                            تسجيل الدخول
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- End Header -->
 
     <!-- Start Content -->
     <div class="container">
         <section class="title">
-            <div class="search-container">
-
+            <div class="row">
+                <div class="search-container col">
+                    <!-- Search Button -->
+                    <div class="search-dropdown">
+                        <button class="dropdown">
+                            <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                مستخدم عام
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </button>
+                        <button class="dropdown">
+                            <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                مجال الاهتمام
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- title -->
+                    <h1 class="title">
+                        معلومات اليوم..<br>
+                        تنمية الغد
+                    </h1>
+                    <!-- search -->
+                    <nav class="navbar">
+                        <form class="form-inline d-flex flex-row">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </nav>
+                    <!-- Search Button -->
+                    <div class="search-button">
+                        <button class="btn btn-outline-dark">
+                            السكان حسب الجنس
+                        </button>
+                        <button class="btn btn-outline-dark">
+                            الاقتصاد الرقمي
+                        </button>
+                        <button class="btn btn-outline-dark">
+                            الاستثمار الأجنبي
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-container col">
+                    <div class="owl-carousel" id="carousel1">
+                        <div class="item">
+                            <div class="card">
+                                <img src="../images/road.svg">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="../images/road.svg">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="../images/road.svg">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="../images/road.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="ticker">
             <div class="carousel-container">
+                <div class="owl-carousel" id="carousel2">
+                    <div class="item">
+                        <div class="card">
+                            hello
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            there
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            general
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            kenobi
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            fight
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homepage-card">
+            <div class="row">
+                <div class="card col">
+                    <img src="../images/road.svg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">الإحصاءات الاجتماعية</h5>
+                        <p class="card-text">104 موضوع</p>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="../images/road.svg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">الإحصاءات الاجتماعية</h5>
+                        <p class="card-text">104 موضوع</p>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="../images/road.svg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">الإحصاءات الاجتماعية</h5>
+                        <p class="card-text">104 موضوع</p>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        <section class="data">
+            <h3 class="title">
+                أحدث البيانات
+            </h3>
+            <div class="row">
+                <div class="col">
+                    <div class="title d-flex flex-row">
+                        <h6 class="title">أحدث الأخبار</h6>
+                        <button class="dropdown">
+                            <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                مستخدم عام
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="list-group-flush">
+                        <li class="list-group-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="../images/building1.svg" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">الهيئة العامة للإحصاء توقع مذكرة تعاون مع المجلس
+                                                الصحي السعودي</h5>
+                                            <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="../images/building2.svg" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">الهيئة العامة للإحصاء تطلق المسح الزراعي الشامل</h5>
+                                            <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="../images/farm.svg" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">الهيئة العامة للإحصاء تصدر إحصاءات الاستثمار الأجنبي
+                                                المباشر للربع الرابع من عام 2023م</h5>
+                                            <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="card-tabs col">
+                    <div class="row row-cols-2">
+                        <div class="card col">
+                            <img src="../images/nural.svg">
+                        </div>
+                        <div class="card col">
+                            <img src="../images/nural.svg">
+                        </div>
+                        <div class="card col">
+                            <img src="../images/nural.svg">
+                        </div>
+                        <div class="card col">
+                            <img src="../images/nural.svg">
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </section>
     </div>
@@ -217,6 +431,8 @@
     <!-- Site JS -->
     <script src="../lib/jquery/jquery.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
