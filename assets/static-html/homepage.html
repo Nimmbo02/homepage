@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
     <link rel="stylesheet" href="../css/main.min.css" />
-
 </head>
 
 <body>
     <!-- Start Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light rounded-3">
             <a class="navbar-brand" href="#">
-                <img src="../images/logo.svg">
+                <img src="../images/logo.svg" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
 
                     <!-- الرئيسية -->
                     <li class="nav-item active">
@@ -33,7 +32,7 @@
                             aria-expanded="false">
                             الهيئة
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                         </div>
@@ -50,7 +49,7 @@
                             aria-expanded="false">
                             الخدمات
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                         </div>
@@ -67,7 +66,7 @@
                             aria-expanded="false">
                             الادلة والتصانيف
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                         </div>
@@ -79,7 +78,7 @@
                             aria-expanded="false">
                             المركز الاعلامي
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                         </div>
@@ -91,7 +90,7 @@
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             تواصل معنا
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                         </div>
@@ -103,7 +102,7 @@
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             AR
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                         </div>
@@ -111,14 +110,14 @@
 
                     <!-- People Button -->
                     <li class="nav-item">
-                        <button>
+                        <button class="btn btn-link">
                             <img src="../images/people.svg" alt="sign in">
                         </button>
                     </li>
 
                     <!-- Login Button -->
                     <li class="nav-item">
-                        <button class="btn-primary">
+                        <button class="btn btn-primary">
                             تسجيل الدخول
                         </button>
                     </li>
@@ -129,298 +128,474 @@
     <!-- End Header -->
 
     <!-- Start Content -->
-    <div class="container">
-        <section class="title">
-            <div class="row">
-                <div class="search-container col">
-                    <!-- Search Button -->
-                    <div class="search-dropdown">
-                        <button class="dropdown">
-                            <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                مستخدم عام
+    <div class="page-container">
+        <section class="page-title">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="search-container col-lg-7 d-flex flex-column">
+                        <!-- Search Button -->
+                        <div class="search-dropdown d-flex mt-3">
+                            <div class="dropdown border mr-2">
+                                <div class="px-3 py-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    مستخدم عام
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
                             </div>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown border">
+                                <div class="px-3 py-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    مجال الاهتمام
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
                             </div>
-                        </button>
-                        <button class="dropdown">
-                            <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                مجال الاهتمام
-                            </div>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                            </div>
-                        </button>
+                        </div>
+                        <!-- title -->
+                        <h1 class="title mt-3">
+                            معلومات اليوم..<br>
+                            تنمية الغد
+                        </h1>
+                        <!-- search -->
+                        <nav class="navbar mt-3">
+                            <form class="form-inline d-flex w-75">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </form>
+                        </nav>
+                        <!-- Search Button -->
+                        <div class="search-button">
+                            <button class="btn btn-outline-dark">
+                                السكان حسب الجنس
+                            </button>
+                            <button class="btn btn-outline-dark">
+                                الاقتصاد الرقمي
+                            </button>
+                            <button class="btn btn-outline-dark">
+                                الاستثمار الأجنبي
+                            </button>
+                        </div>
                     </div>
-                    <!-- title -->
-                    <h1 class="title">
-                        معلومات اليوم..<br>
-                        تنمية الغد
-                    </h1>
-                    <!-- search -->
-                    <nav class="navbar">
-                        <form class="form-inline d-flex flex-row">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </nav>
-                    <!-- Search Button -->
-                    <div class="search-button">
-                        <button class="btn btn-outline-dark">
-                            السكان حسب الجنس
-                        </button>
-                        <button class="btn btn-outline-dark">
-                            الاقتصاد الرقمي
-                        </button>
-                        <button class="btn btn-outline-dark">
-                            الاستثمار الأجنبي
-                        </button>
+                    <div class="col-lg-5">
+                        <div class="title-carousel-container">
+                            <div class="owl-carousel owl-theme" id="title-carousel">
+                                <div class="item">
+                                    <div class="card">
+                                        <img src="../images/road.svg" alt="Image 1">
+                                        <div class="card-img-overlay d-flex flex-column">
+                                            <p class="card-text text-white">4 فبراير 2024</p>
+                                            <h5 class="card-title text-white">التجارة الخارجية في المملكة العربية
+                                                السعودية
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <img src="../images/road.svg" alt="Image 2">
+                                        <div class="card-img-overlay d-flex flex-column">
+                                            <p class="card-text text-white">4 فبراير 2024</p>
+                                            <h5 class="card-title text-white">التجارة الخارجية في المملكة العربية
+                                                السعودية
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <img src="../images/road.svg" alt="Image 3">
+                                        <div class="card-img-overlay d-flex flex-column">
+                                            <p class="card-text text-white">4 فبراير 2024</p>
+                                            <h5 class="card-title text-white">التجارة الخارجية في المملكة العربية
+                                                السعودية
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <img src="../images/road.svg" alt="Image 4">
+                                        <div class="card-img-overlay d-flex flex-column">
+                                            <p class="card-text text-white">4 فبراير 2024</p>
+                                            <h5 class="card-title text-white">التجارة الخارجية في المملكة العربية
+                                                السعودية
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-container col">
-                    <div class="owl-carousel" id="carousel1">
-                        <div class="item">
-                            <div class="card">
-                                <img src="../images/road.svg">
+                <div class="ticker">
+                    <div class="owl-carousel owl-theme" id="ticker-carousel">
+                        <!-- Start Ticker Item -->
+                        <div class="item h-50">
+                            <div class="card h-25 d-flex flex-row align-items-center">
+                                <img src="../images/user-multiple.svg" class="card-img-top h-50 w-50" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">32,175,224</h5>
+                                    <p class="card-text"><small class="text-muted">العدد الإجمالي للسكان</small></p>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="card">
-                                <img src="../images/road.svg">
+                        <!-- End Ticker Item -->
+
+                        <!-- Start Ticker Item -->
+                        <div class="item h-50">
+                            <div class="card h-25 d-flex flex-row align-items-center">
+                                <img src="../images/user-multiple.svg" class="card-img-top h-50 w-50" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">7.7%</h5>
+                                    <p class="card-text"><small class="text-muted">البطالة في المملكة العربية السعودية،
+                                            الربع الرابع 2023</small></p>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="card">
-                                <img src="../images/road.svg">
+                        <!-- End Ticker Item -->
+
+                        <!-- Start Ticker Item -->
+                        <div class="item h-50">
+                            <div class="card h-25 d-flex flex-row align-items-center">
+                                <img src="../images/user-multiple.svg" class="card-img-top h-50 w-50" alt="...">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">- 8.8%</h5>
+                                    <p class="card-text"><small class="text-muted">الرقم القياسي للإنتاج الصناعي، يناير
+                                            2023</small></p>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="card">
-                                <img src="../images/road.svg">
+                        <!-- End Ticker Item -->
+
+                        <!-- Start Ticker Item -->
+                        <div class="item h-50">
+                            <div class="card h-25 d-flex flex-row align-items-center">
+                                <img src="../images/user-multiple.svg" class="card-img-top h-50 w-50" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">1.8%</h5>
+                                    <p class="card-text"><small class="text-muted">التضخم، فبراير 2023</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Ticker Item -->
+
+                        <!-- Start Ticker Item -->
+                        <div class="item h-50">
+                            <div class="card h-25 d-flex flex-row align-items-center">
+                                <img src="../images/user-multiple.svg" class="card-img-top h-50 w-50" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">- 0.8%</h5>
+                                    <p class="card-text"><small class="text-muted">معدل نمو الناتج المحلي الإجمالي
+                                            الحقيقي 2023</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Ticker Item -->
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="homepage-card mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="card col-lg-4 p-0">
+                        <img src="../images/road.svg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <h5 class="card-title text-white">الإحصاءات الاجتماعية</h5>
+                            <p class="card-text text-white">104 موضوع</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 p-0">
+                        <img src="../images/road.svg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <h5 class="card-title text-white">الإحصاءات الاجتماعية</h5>
+                            <p class="card-text text-white">104 موضوع</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 p-0">
+                        <img src="../images/road.svg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <h5 class="card-title text-white">الإحصاءات الاجتماعية</h5>
+                            <p class="card-text text-white">104 موضوع</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="data mt-4">
+            <div class="container">
+                <h3 class="title">
+                    أحدث البيانات
+                </h3>
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <div class="title d-flex flex-row justify-content-between align-items-center">
+                            <h6 class="title">أحدث الأخبار</h6>
+                            <button class="dropdown">
+                                <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    مستخدم عام
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="list-group list-group-flush mt-3">
+                            <li class="list-group-item">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <img src="../images/building1.svg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">الهيئة العامة للإحصاء توقع مذكرة تعاون مع المجلس
+                                                    الصحي السعودي</h5>
+                                                <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <img src="../images/building2.svg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">الهيئة العامة للإحصاء تطلق المسح الزراعي الشامل
+                                                </h5>
+                                                <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <img src="../images/farm.svg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">الهيئة العامة للإحصاء تصدر إحصاءات الاستثمار
+                                                    الأجنبي
+                                                    المباشر للربع الرابع من عام 2023م</h5>
+                                                <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card-tabs col-lg-6">
+                        <div class="row row-cols-2">
+                            <div class="card col-lg-6 p-2">
+                                <img src="../images/nural.svg" class="img-fluid" alt="Image">
+                            </div>
+                            <div class="card col-lg-6 p-2">
+                                <img src="../images/nural.svg" class="img-fluid" alt="Image">
+                            </div>
+                            <div class="card col-lg-6 p-2">
+                                <img src="../images/nural.svg" class="img-fluid" alt="Image">
+                            </div>
+                            <div class="card col-lg-6 p-2">
+                                <img src="../images/nural.svg" class="img-fluid" alt="Image">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="ticker">
-            <div class="carousel-container">
-                <div class="owl-carousel" id="carousel2">
-                    <div class="item">
-                        <div class="card">
-                            hello
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            there
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            general
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            kenobi
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            fight
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="homepage-card">
-            <div class="row">
-                <div class="card col">
-                    <img src="../images/road.svg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">الإحصاءات الاجتماعية</h5>
-                        <p class="card-text">104 موضوع</p>
-                    </div>
-                </div>
-                <div class="card col">
-                    <img src="../images/road.svg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">الإحصاءات الاجتماعية</h5>
-                        <p class="card-text">104 موضوع</p>
-                    </div>
-                </div>
-                <div class="card col">
-                    <img src="../images/road.svg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">الإحصاءات الاجتماعية</h5>
-                        <p class="card-text">104 موضوع</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="data">
-            <h3 class="title">
-                أحدث البيانات
-            </h3>
-            <div class="row">
-                <div class="col">
-                    <div class="title d-flex flex-row">
-                        <h6 class="title">أحدث الأخبار</h6>
-                        <button class="dropdown">
-                            <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                مستخدم عام
-                            </div>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="list-group-flush">
-                        <li class="list-group-item">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="../images/building1.svg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">الهيئة العامة للإحصاء توقع مذكرة تعاون مع المجلس
-                                                الصحي السعودي</h5>
-                                            <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
-                                        </div>
-                                    </div>
+        <section class="info mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="container col-lg-6">
+                        <div class="title d-flex flex-row justify-content-between align-items-center">
+                            <h6 class="title">
+                                أحدث النشرات
+                            </h6>
+                            <button class="dropdown">
+                                <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    إظهار الكل
                                 </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="../images/building2.svg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">الهيئة العامة للإحصاء تطلق المسح الزراعي الشامل</h5>
-                                            <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
-                                        </div>
-                                    </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
                                 </div>
+                            </button>
+                        </div>
+                        <div class="list-group list-group-flush mt-3">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <img src="../images/tv.svg" alt="" class="rounded-3 mr-2">
+                                <p class="mb-0">متوسط ​​أسعار السلع والخدمات مارس 2024</p>
                             </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="../images/farm.svg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">الهيئة العامة للإحصاء تصدر إحصاءات الاستثمار الأجنبي
-                                                المباشر للربع الرابع من عام 2023م</h5>
-                                            <p class="card-text"><small class="text-muted">4 يوليو 2024</small></p>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="list-group list-group-flush mt-3">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <img src="../images/tv.svg" alt="" class="rounded-3 mr-2">
+                                <p class="mb-0">متوسط ​​أسعار السلع والخدمات لشهر فبراير 2024</p>
                             </div>
-                        </li>
-                    </div>
-                </div>
-                <div class="card-tabs col">
-                    <div class="row row-cols-2">
-                        <div class="card col">
-                            <img src="../images/nural.svg">
                         </div>
-                        <div class="card col">
-                            <img src="../images/nural.svg">
+                        <div class="list-group list-group-flush mt-3">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <img src="../images/tv.svg" alt="" class="rounded-3 mr-2">
+                                <p class="mb-0">الرقم القياسي لأسعار المستهلك، فبراير 2024</p>
+                            </div>
                         </div>
-                        <div class="card col">
-                            <img src="../images/nural.svg">
-                        </div>
-                        <div class="card col">
-                            <img src="../images/nural.svg">
+                        <div class="list-group list-group-flush mt-3">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <img src="../images/tv.svg" alt="" class="rounded-3 mr-2">
+                                <p class="mb-0">متوسط ​​أسعار السلع والخدمات لشهر فبراير 2024</p>
+                            </div>
                         </div>
                     </div>
-
-
+                    <div class="container col-lg-6">
+                        <div class="title d-flex flex-row justify-content-between align-items-center">
+                            <h6 class="title">
+                                أحدث النشرات
+                            </h6>
+                            <button class="dropdown">
+                                <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    إظهار الكل
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <div class="rounded-3 bg-primary text-white text-center px-3 mr-2">
+                                    <h6 class="m-0">18</h6>
+                                    <p class="m-0">يوليو</p>
+                                    <p class="mb-0 py-0 m-0">2024</p>
+                                </div>
+                                <p class="mb-0">إحصاءات سوق العمل القائمة على التسجيل للربع الأول/2024</p>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <div class="rounded-3 bg-primary text-white text-center px-3 mr-2">
+                                    <h6 class="m-0">18</h6>
+                                    <p class="m-0">يوليو</p>
+                                    <p class="mb-0 py-0 m-0">2024</p>
+                                </div>
+                                <p class="mb-0">متوسط ​​أسعار السلع والخدمات لشهر يونيو 2024</p>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <div class="rounded-3 bg-primary text-white text-center px-3 mr-2">
+                                    <h6 class="m-0">18</h6>
+                                    <p class="m-0">يوليو</p>
+                                    <p class="mb-0 py-0 m-0">2024</p>
+                                </div>
+                                <p class="mb-0">متوسط ​​أسعار السلع والخدمات لشهر أغسطس 2024 </p>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex flex-row align-items-center">
+                                <div class="rounded-3 bg-primary text-white text-center px-3 mr-2">
+                                    <h6 class="m-0">18</h6>
+                                    <p class="m-0">يوليو</p>
+                                    <p class="mb-0 py-0 m-0">2024</p>
+                                </div>
+                                <p class="mb-0">متوسط ​​أسعار السلع والخدمات، ديسمبر 2024</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
+    </div>
     <!-- End Content -->
 
-
     <!-- Start Footer -->
-    <footer>
-        <div class="container bg-light rounded">
+    <footer class="mt-5">
+        <div class="container bg-light rounded-3 py-4">
             <div class="row">
 
-                <div class="col">
+                <div class="col-lg-3">
                     <h6 class="title">
                         نظرة عامة
                     </h6>
-                    <div class="list-group-flush">
-                        <li class="list-group-item">سياسة الاستخدام</li>
-                        <li class="list-group-item">إشعار الخصوصية</li>
-                        <li class="list-group-item">سياسة حرية المعلومات</li>
-                        <li class="list-group-item">الأخبار</li>
-                        <li class="list-group-item">آخر تحديثات الأخبار والإحصائيات</li>
-                        <li class="list-group-item">إحصائيات ومؤشرات البوابة</li>
-                        <li class="list-group-item">خريطة الموقع</li>
-                        <li class="list-group-item">الإشتراك في النشرة البريدية</li>
-                    </div>
+                    <ul class="list-unstyled">
+                        <li class="list-group-item border-0 p-0">سياسة الاستخدام</li>
+                        <li class="list-group-item border-0 p-0">إشعار الخصوصية</li>
+                        <li class="list-group-item border-0 p-0">سياسة حرية المعلومات</li>
+                        <li class="list-group-item border-0 p-0">الأخبار</li>
+                        <li class="list-group-item border-0 p-0">آخر تحديثات الأخبار والإحصائيات</li>
+                        <li class="list-group-item border-0 p-0">إحصائيات ومؤشرات البوابة</li>
+                        <li class="list-group-item border-0 p-0">خريطة الموقع</li>
+                        <li class="list-group-item border-0 p-0">الإشتراك في النشرة البريدية</li>
+                    </ul>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-3">
                     <h6 class="title">
                         المساعدة والدعم
                     </h6>
-                    <div class="list-group-flush">
-                        <li class="list-group-item">تواصل معنا</li>
-                        <li class="list-group-item">طلب معلومات إحصائية</li>
-                        <li class="list-group-item">الإبلاغ عن حالة فساد</li>
-                        <li class="list-group-item">تقديم شكوى</li>
-                        <li class="list-group-item">الأسئلة الشائعة</li>
-                    </div>
+                    <ul class="list-unstyled">
+                        <li class="list-group-item border-0 p-0">تواصل معنا</li>
+                        <li class="list-group-item border-0 p-0">طلب معلومات إحصائية</li>
+                        <li class="list-group-item border-0 p-0">الإبلاغ عن حالة فساد</li>
+                        <li class="list-group-item border-0 p-0">تقديم شكوى</li>
+                        <li class="list-group-item border-0 p-0">الأسئلة الشائعة</li>
+                    </ul>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-3">
                     <h6 class="title">
                         روابط مهمة
                     </h6>
-                    <div class="list-group-flush">
-                        <li class="list-group-item">وزارة الاقتصاد والتخطيط</li>
-                        <li class="list-group-item">منصة البيانات المفتوحة</li>
-                        <li class="list-group-item">التحول الرقمي واستراتيجية الحكومة الرقمية</li>
-                        <li class="list-group-item">التنمية المستدامة</li>
-                        <li class="list-group-item">رؤية المملكة 2030</li>
-                        <li class="list-group-item">منصة المشاركة الإلكترونية</li>
-                        <li class="list-group-item">ميزانية الدولة</li>
-                    </div>
+                    <ul class="list-unstyled">
+                        <li class="list-group-item border-0 p-0">وزارة الاقتصاد والتخطيط</li>
+                        <li class="list-group-item border-0 p-0">منصة البيانات المفتوحة</li>
+                        <li class="list-group-item border-0 p-0">التحول الرقمي واستراتيجية الحكومة الرقمية</li>
+                        <li class="list-group-item border-0 p-0">التنمية المستدامة</li>
+                        <li class="list-group-item border-0 p-0">رؤية المملكة 2030</li>
+                        <li class="list-group-item border-0 p-0">منصة المشاركة الإلكترونية</li>
+                        <li class="list-group-item border-0 p-0">ميزانية الدولة</li>
+                    </ul>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-3">
                     <h6 class="title">
                         تواصل معنا
                     </h6>
-                    <div class="list-group-flush">
-                        <li class="list-group-item">info@stats.gov.sa <i class="fa-envelope"></i></li>
-                        <li class="list-group-item"> 199009 <i class="fa-phone"></i></li>
-                    </div>
+                    <ul class="list-unstyled">
+                        <li class="list-group-item border-0 p-0">info@stats.gov.sa <i class="fa-envelope"></i></li>
+                        <li class="list-group-item border-0 p-0">199009 <i class="fa-phone"></i></li>
+                    </ul>
                     <br>
                     <br>
                     <h6 class="title">
                         تابعنا على
                     </h6>
-                    <div class="list-group-flush d-flex flex-row">
-                        <li class="list-group-item"><img src="../images/twitter.svg"></li>
-                        <li class="list-group-item"><img src="../images/facebook.svg"></li>
-                        <li class="list-group-item"><img src="../images/insta.svg"></li>
-                        <li class="list-group-item"><img src="../images/linkedin.svg"></li>
+                    <div class="d-flex flex-row">
+                        <img src="../images/twitter.svg" class="mr-2" alt="Twitter">
+                        <img src="../images/facebook.svg" class="mr-2" alt="Facebook">
+                        <img src="../images/insta.svg" class="mr-2" alt="Instagram">
+                        <img src="../images/linkedin.svg" class="mr-2" alt="LinkedIn">
                     </div>
                 </div>
             </div>

@@ -1,0 +1,26 @@
+.search-container{
+    .search-dropdown{
+        .dropdown{
+            font-weight: 500;
+            margin-inline-end: 1rem;
+
+        } 
+    }
+    .title{
+        font-size: 3.75rem;
+    }
+    .navbar{
+        .form-inline{
+            min-width: 6rem;
+            .form-control{
+                margin-inline-end: 1rem;
+            }
+        }
+    }
+    .search-button{
+        .btn{
+            margin-inline-end: 1rem;
+        }
+    }
+}
+

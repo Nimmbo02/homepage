@@ -1,0 +1,34 @@
+.title-carousel-container {
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    .owl-carousel {
+        padding-top:1rem;
+        padding-inline: 1rem;
+        max-width: 506px;
+        border-radius: 20px;
+        .owl-stage-outer {
+            border-radius: 20px;
+            .owl-stage {
+                border-radius: 20px;
+                .owl-item {
+                    border-radius: 20px;
+                    .item {
+                        border-radius: 20px;
+                        .card {
+                            border-radius: 20px;
+                            overflow: hidden;
+                            .img {
+                                border-radius: 20px;
+                                object-fit: cover;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
