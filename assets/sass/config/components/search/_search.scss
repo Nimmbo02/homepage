@@ -11,7 +11,7 @@
     }
     .navbar{
         .form-inline{
-            min-width: 6rem;
+            min-width: 33rem;
             .form-control{
                 margin-inline-end: 1rem;
             }
@@ -19,7 +19,8 @@
     }
     .search-button{
         .btn{
-            margin-inline-end: 1rem;
+            margin-inline-end: 0.75rem;
+            max-height: 2rem;
         }
     }
 }

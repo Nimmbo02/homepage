@@ -20296,6 +20296,21 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
+.homepage-card .container .row .card {
+  max-width: 26rem;
+  padding: 0;
+  margin-inline: 0.5rem;
+  border: none;
+  border-radius: 20px;
+}
+.homepage-card .container .row .card .card-img {
+  border-radius: 20px;
+}
+.homepage-card .container .row .card .card-img-overlay {
+  background-image: linear-gradient(to bottom, rgb(27, 131, 84), rgba(255, 255, 255, 0));
+  border-radius: 20px;
+}
+
 .search-container .search-dropdown .dropdown {
   font-weight: 500;
   margin-inline-end: 1rem;
@@ -20304,20 +20319,37 @@ readers do not read off random characters that represent icons */
   font-size: 3.75rem;
 }
 .search-container .navbar .form-inline {
-  min-width: 6rem;
+  min-width: 33rem;
 }
 .search-container .navbar .form-inline .form-control {
   margin-inline-end: 1rem;
 }
 .search-container .search-button .btn {
-  margin-inline-end: 1rem;
+  margin-inline-end: 0.75rem;
+  max-height: 2rem;
 }
 
 .ticker {
   margin-top: 5rem;
+  padding-bottom: 5rem;
 }
 .ticker .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card {
+  border: none;
   border-radius: 16px;
+  max-height: 6.125rem;
+  min-height: 6.125rem;
+  overflow: hidden;
+}
+.ticker .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card-title {
+  font-weight: 700;
+}
+.ticker .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card-text {
+  font-weight: 500;
+}
+.ticker .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-img-top {
+  max-height: 3rem;
+  max-width: 3rem;
+  margin-inline-start: 1rem;
 }
 
 .page-container {
@@ -20330,12 +20362,15 @@ readers do not read off random characters that represent icons */
   justify-content: center;
   border-radius: 20px;
   background-color: white;
+  max-width: 34rem;
 }
 .title-carousel-container .owl-carousel {
   padding-top: 1rem;
-  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  padding-inline: 0.25rem;
   max-width: 506px;
   border-radius: 20px;
+  position: relative;
 }
 .title-carousel-container .owl-carousel .owl-stage-outer {
   border-radius: 20px;
@@ -20350,21 +20385,128 @@ readers do not read off random characters that represent icons */
   border-radius: 20px;
 }
 .title-carousel-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card {
+  position: relative;
   border-radius: 20px;
   overflow: hidden;
 }
-.title-carousel-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .img {
+.title-carousel-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card img {
   border-radius: 20px;
   object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.title-carousel-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 1rem 1rem 3rem;
+  border-radius: 20px;
+}
+.title-carousel-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-img-overlay::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(39, 50, 66, 0) 0%, rgb(17, 25, 39) 100%);
+  position: absolute;
+  width: 100%;
+  height: 63.8%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+}
+.title-carousel-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-img-overlay .card-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 44px;
+  color: white;
+  padding-inline-start: 2rem;
+}
+.title-carousel-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-img-overlay .card-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: white;
+  padding-inline-start: 2rem;
+}
+.title-carousel-container .owl-carousel .owl-nav,
+.title-carousel-container .owl-carousel .owl-dots {
+  position: absolute;
+  z-index: 10;
+}
+.title-carousel-container .owl-carousel .owl-nav {
+  top: 90%;
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  left: 5%;
+}
+.title-carousel-container .owl-carousel .owl-nav .owl-prev,
+.title-carousel-container .owl-carousel .owl-nav .owl-next {
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.title-carousel-container .owl-carousel .owl-dots {
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.title-carousel-container .owl-carousel .owl-dots .owl-dot {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+.title-carousel-container .owl-carousel .owl-dots .owl-dot.active {
+  background-color: rgb(255, 255, 255);
+}
+.title-carousel-container .owl-carousel .owl-dots .owl-dot:hover {
+  background-color: rgb(255, 255, 255);
 }
 
 .page-title {
   background-size: cover;
-  background-image: url(/assets/images/background.svg);
+  background-image: url(/assets/images/background-alt.png);
   opacity: 0.8;
   background-repeat: no-repeat;
 }
 
 .navbar .navbar-nav .nav-item {
   margin-inline-end: 1rem;
+}
+
+.data .container .title {
+  font-weight: 700;
+}
+.data .container .row .news {
+  border-radius: 20px;
+  background-color: rgb(243, 244, 246);
+}
+.data .container .row .news .title {
+  margin-top: 1.25rem;
+}
+.data .container .row .news .title h2, .data .container .row .news .title .h2 {
+  font-weight: 700;
+}
+.data .container .row .news .list-group {
+  border-radius: 20px;
+}
+.data .container .row .news .list-group .list-group-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+.data .container .row .news .list-group .list-group-item .card {
+  border: none;
 }/*# sourceMappingURL=main.css.map */
