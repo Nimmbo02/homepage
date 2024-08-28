@@ -1,0 +1,22 @@
+.card-tabs{
+    .row{
+        .card{
+            border: none;
+            .card-img-overlay{
+                border: none;
+                border-radius: 20px;
+                .card-title{
+                    font-size: 1.6rem;
+                    padding-inline-start: 2rem;
+                    padding-bottom: 0.5rem;
+                }
+            }
+            video{
+                border-radius: 20px;
+            }
+            img{
+                border-radius: 20px;
+            }
+        }
+    }
+}

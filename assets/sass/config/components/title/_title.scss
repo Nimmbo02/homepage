@@ -4,3 +4,10 @@
     opacity: 0.8;
     background-repeat: no-repeat;
 }
+.data{
+    & .container{
+        & .data-title{
+            margin-bottom: 2rem;
+        }
+    }
+}
