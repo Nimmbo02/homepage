@@ -20498,8 +20498,27 @@ readers do not read off random characters that represent icons */
   margin-bottom: 2rem;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
 .navbar .navbar-nav .nav-item {
   margin-inline-end: 1rem;
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-nav .btn {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
 .footer .container .footer-bottom .container {

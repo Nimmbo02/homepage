@@ -1,7 +1,27 @@
 .navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    
     .navbar-nav {
+        display: flex;
+        align-items: center; 
+        
         .nav-item {
             margin-inline-end: 1rem;
+            display: flex;
+            align-items: center; 
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center; 
         }
     }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center; 
+    }
+    
 }
