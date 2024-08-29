@@ -1,9 +1,15 @@
-.footer{
-    .container{
-        .footer-bottom{
-            .container{
+.footer-bottom {
+    .container {
+        .col{
+            .page-logo{
                 display: flex;
-                justify-content: space-between;
+                justify-content: end;
+            }
+            .row{
+                .page-logo{
+                    display: flex;
+                    justify-content: end;
+                }
             }
         }
     }

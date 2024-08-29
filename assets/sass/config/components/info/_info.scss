@@ -1,34 +1,38 @@
 .info {
     .container {
         .row {
-            .container {
-                max-width: 39rem;
-                border-radius: 20px;
-                background-color: rgb(243, 244, 246);
-                padding-inline-start: 2rem;
-                padding-inline-end: 2rem;
-                .title {
-                    margin-top: 1.25rem;
-                    margin-bottom: 1.5rem;
-                    h3 {
-                        font-weight: 700;
-                        margin-bottom: 0;
-                    }
-                }
-                .list-group {
+            .col-lg-6{
+                .container {
+                    max-width: 39rem;
                     border-radius: 20px;
-                    .list-group-item {
-                        min-height: 5.5rem;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        border-bottom: 1px solid lightgray;
-                        .bg-primary{
-                            margin-inline-end: 1rem;
+                    background-color: rgb(243, 244, 246);
+                    padding-inline-start: 2rem;
+                    padding-inline-end: 2rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    .title {
+                        margin-top: 1.25rem;
+                        margin-bottom: 1.5rem;
+                        h3 {
+                            font-weight: 700;
+                            margin-bottom: 0;
                         }
-                        img {
-                            padding-inline-end: 1rem;
+                    }
+                    .list-group {
+                        border-radius: 20px;
+                        .list-group-item {
+                            min-height: 5.5rem;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            border-bottom: 1px solid lightgray;
+                            .bg-primary{
+                                margin-inline-end: 1rem;
+                            }
+                            img {
+                                padding-inline-end: 1rem;
+                            }
+    
                         }
-
                     }
                 }
             }

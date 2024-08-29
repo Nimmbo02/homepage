@@ -2,10 +2,11 @@
     margin-bottom: 3.25rem;
     .container {
         .row {
+            justify-content: center;
             .card {
                 max-width: 26rem;
                 padding: 0;
-                margin-inline: 0.5rem;
+                margin-inline: 0.6rem;
                 border: none;
                 border-radius: 20px;
                 
@@ -17,11 +18,16 @@
                     border-radius: 20px;
                     .card-title{
                         padding-top: 1rem;
+                        margin-bottom: 0.5rem;
                         font-weight: 500;
+                        font-size: 1.5rem;
+                        line-height: 2rem;
                         font-size: 1.5rem;
                     }
                     .card-text{
                         font-weight: 500;
+                        font-size: 1.25rem;
+                        line-height: 1.875rem;
                         font-size: 1.25rem;
                     }
                 }

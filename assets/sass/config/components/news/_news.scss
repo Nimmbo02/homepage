@@ -1,9 +1,11 @@
 .news {
+    max-width: 39rem;
     border-radius: 20px;
     background-color: rgb(243, 244, 246);
-    padding-inline-start: 1.25rem;
-    padding-inline-end: 1.25rem;
-    max-width: 39rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     .title {
         margin-top: 1.25rem;
         margin-bottom: 1.5rem;
@@ -30,13 +32,13 @@
                             max-height: 6rem;
                         }
                     }
-                    .col-md-8{
-                        .card-body{
-                            .crad-title{
+                    .col-md-8 {
+                        .card-body {
+                            .crad-title {
                                 font-weight: 700;
                             }
-                            .card-text{
-                                .text-muted{
+                            .card-text {
+                                .text-muted {
                                     font-weight: 700;
                                 }
                             }

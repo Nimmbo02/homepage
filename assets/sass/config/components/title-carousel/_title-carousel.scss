@@ -53,7 +53,7 @@
 
                                 &::before {
                                     content: "";
-                                    background: linear-gradient(180deg, rgba(39, 50, 66, 0) 0%, rgba(17, 25, 39) 100%);
+                                    background: linear-gradient(180deg, rgba(39, 50, 66, 0) , rgba(31, 42, 55,1) );
                                     position: absolute;
                                     width: 100%;
                                     height: 63.8%;
@@ -64,17 +64,17 @@
                                 }
 
                                 .card-title {
-                                    font-size: 34px;
+                                    font-size: 2.25rem;
                                     font-weight: 700;
-                                    line-height: 44px;
+                                    line-height: 2.75rem;
                                     color: white;
                                     padding-inline-start: 2rem;
                                 }
 
                                 .card-text {
-                                    font-size: 14px;
+                                    font-size: 0.875rem;
                                     font-weight: 500;
-                                    line-height: 18px;
+                                    line-height: 1.125rem;
                                     color: white;
                                     padding-inline-start: 2rem;
                                 }
@@ -92,8 +92,8 @@
         }
 
         .owl-nav {
-            top: 90%;
-            width: 5%;
+            top: 85%;
+            width: 7.5%;
             display: flex;
             justify-content: space-between;
             transform: translateY(-50%);
@@ -104,31 +104,34 @@
                 border-radius: 50%;
                 padding: 10px;
                 color: white;
-                font-size: 20px;
+                font-size: 3rem;
                 cursor: pointer;
             }
         }
 
         .owl-dots {
-            bottom: 20px;
+            bottom: 2rem;
             width: 100%;
             text-align: center;
 
             .owl-dot {
-                background-color: rgba(255, 255, 255, 0.7);
+                background-color: rgba(255, 255, 255, 0.5); 
                 border-radius: 50%;
-                width: 12px;
-                height: 12px;
+                width: 0.5rem;
+                height: 0.5rem;
                 margin: 0 5px;
                 display: inline-block;
                 cursor: pointer;
+                transition: all 0.3s ease; 
 
                 &.active {
-                    background-color: rgba(255, 255, 255, 1); 
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 1.5rem; 
+                    border-radius: 10px; 
                 }
 
                 &:hover {
-                    background-color: rgba(255, 255, 255, 1); 
+                    background-color: rgba(255, 255, 255, 0.7); 
                 }
             }
         }

@@ -1,26 +1,37 @@
-.ticker{
+.ticker {
     margin-top: 5rem;
     padding-bottom: 5rem;
-    .owl-carousel{
-        .owl-stage-outer{
-            .owl-stage{
-                .owl-item{
-                    .item{
-                        .card{
+    .owl-carousel {
+        .owl-stage-outer {
+            .owl-stage {
+                .owl-item {
+                    .item {
+                        .card {
                             border: none;
                             border-radius: 16px;
-                            max-height: 6.125rem;
-                            min-height: 6.125rem;
+                            height: 6.125rem;
                             overflow: hidden;
-                            .card-body{
-                                .card-title{
+                            .card-body {
+                                height: 120px; 
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                margin-bottom: 1.12rem;
+
+                                .card-title {
                                     font-weight: 700;
+                                    font-size: 24px;
+                                    margin-top: 1rem;
+                                    margin-bottom: 0;
+                                    line-height: 2rem;
                                 }
-                                .card-text{
+                                .card-text {
                                     font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 1.12rem;
                                 }
                             }
-                            .card-img-top{
+                            .card-img-top {
                                 max-height: 3rem;
                                 max-width: 3rem;
                                 margin-inline-start: 1rem;
