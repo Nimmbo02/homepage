@@ -1,13 +1,21 @@
 
 .page-title{
-    background-size: cover;
-    background-image: url(/assets/images/f-background.png);
-    background-repeat: no-repeat;
+    padding-top:10rem; 
 }
 .data{
     & .container{
         & .data-title{
+            font-size: 2.25rem;
+            line-height: 2.75rem;
             margin-bottom: 2rem;
+        }
+        .row{
+            .col-lg-6{
+                .card-tabs{
+                    padding-inline-start: 0;
+                }
+                
+            }
         }
     }
 }

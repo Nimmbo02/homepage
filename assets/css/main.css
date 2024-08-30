@@ -20297,7 +20297,7 @@ readers do not read off random characters that represent icons */
 }
 
 .homepage-card {
-  margin-bottom: 3.25rem;
+  margin-bottom: 4.5rem;
 }
 .homepage-card .container .row {
   justify-content: center;
@@ -20389,7 +20389,10 @@ readers do not read off random characters that represent icons */
 }
 
 .page-container {
-  padding-top: 10rem;
+  background-size: contain;
+  background-image: url(/assets/images/f-background.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .title-carousel-container {
@@ -20399,6 +20402,7 @@ readers do not read off random characters that represent icons */
   border-radius: 20px;
   background-color: white;
   max-width: 34rem;
+  border: none;
 }
 .title-carousel-container .owl-carousel {
   padding-top: 1rem;
@@ -20515,13 +20519,16 @@ readers do not read off random characters that represent icons */
 }
 
 .page-title {
-  background-size: cover;
-  background-image: url(/assets/images/f-background.png);
-  background-repeat: no-repeat;
+  padding-top: 10rem;
 }
 
 .data .container .data-title {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
   margin-bottom: 2rem;
+}
+.data .container .row .col-lg-6 .card-tabs {
+  padding-inline-start: 0;
 }
 
 .navbar {
@@ -20555,13 +20562,55 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 
-.footer-bottom .container .col .page-logo {
-  display: flex;
-  justify-content: end;
+.footer .container {
+  padding-top: 2rem;
 }
-.footer-bottom .container .col .row .page-logo {
+.footer .container .row .col-lg-3 .social img {
+  padding-inline-start: 0.25rem;
+  padding-inline-end: 0.25rem;
+}
+.footer .container .row .col-lg-3 .title {
+  border-bottom: 1px solid lightgray;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.footer .container .row .col-lg-3 ul {
+  padding: 0;
+}
+.footer .container .row .col-lg-3 ul li {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.footer-bottom .container .site-logo {
   display: flex;
   justify-content: end;
+  margin-bottom: 1.5rem;
+}
+.footer-bottom .container .brand-logo {
+  padding-inline-end: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.footer-bottom .container .brand-logo .copy-right {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom .container .brand-logo .copy-right p {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0;
+}
+.footer-bottom .container .brand-logo .logos .p1 {
+  min-height: 5.18rem;
+  padding-inline-start: 1.5rem;
 }
 
 .card-tabs .row .card {
@@ -20583,31 +20632,78 @@ readers do not read off random characters that represent icons */
   border-radius: 20px;
 }
 
-.footer-bottom .container .col .page-logo {
-  display: flex;
-  justify-content: end;
+.footer .container {
+  padding-top: 2rem;
 }
-.footer-bottom .container .col .row .page-logo {
+.footer .container .row .col-lg-3 .social img {
+  padding-inline-start: 0.25rem;
+  padding-inline-end: 0.25rem;
+}
+.footer .container .row .col-lg-3 .title {
+  border-bottom: 1px solid lightgray;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.footer .container .row .col-lg-3 ul {
+  padding: 0;
+}
+.footer .container .row .col-lg-3 ul li {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.footer-bottom .container .site-logo {
   display: flex;
   justify-content: end;
+  margin-bottom: 1.5rem;
+}
+.footer-bottom .container .brand-logo {
+  padding-inline-end: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.footer-bottom .container .brand-logo .copy-right {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom .container .brand-logo .copy-right p {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0;
+}
+.footer-bottom .container .brand-logo .logos .p1 {
+  min-height: 5.18rem;
+  padding-inline-start: 1.5rem;
 }
 
 .news {
-  max-width: 39rem;
   border-radius: 20px;
   background-color: rgb(243, 244, 246);
-  padding-inline-start: 2rem;
-  padding-inline-end: 2rem;
+  padding-inline-start: 1.25rem;
+  padding-inline-end: 1.25rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.25rem;
 }
 .news .title {
-  margin-top: 1.25rem;
   margin-bottom: 1.5rem;
 }
 .news .title h3, .news .title .h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
   margin-bottom: 0;
+}
+.news .title .dropdown {
+  border: 0.5px solid lightgray;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .news .list-group {
   border-radius: 20px;
@@ -20629,42 +20725,53 @@ readers do not read off random characters that represent icons */
   max-width: 10.3rem;
   max-height: 6rem;
 }
-.news .list-group .list-group-item .card .row .col-md-8 .card-body .crad-title {
+.news .list-group .list-group-item .card .row .col-md-8 .card-body .card-title {
   font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .news .list-group .list-group-item .card .row .col-md-8 .card-body .card-text .text-muted {
   font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
+.info .container .row .col-lg-6 .bulletins .list-group .list-group-item {
+  padding-top: 1.2875rem;
+  padding-bottom: 1.2875rem;
+}
 .info .container .row .col-lg-6 .container {
-  max-width: 39rem;
   border-radius: 20px;
   background-color: rgb(243, 244, 246);
-  padding-inline-start: 2rem;
-  padding-inline-end: 2rem;
+  padding-inline-start: 1.25rem;
+  padding-inline-end: 1.25rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.25rem;
 }
 .info .container .row .col-lg-6 .container .title {
-  margin-top: 1.25rem;
   margin-bottom: 1.5rem;
 }
 .info .container .row .col-lg-6 .container .title h3, .info .container .row .col-lg-6 .container .title .h3 {
   font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin-bottom: 0;
 }
 .info .container .row .col-lg-6 .container .list-group {
   border-radius: 20px;
 }
 .info .container .row .col-lg-6 .container .list-group .list-group-item {
-  min-height: 5.5rem;
-  padding-top: 0;
-  padding-bottom: 0;
   border-bottom: 1px solid lightgray;
 }
 .info .container .row .col-lg-6 .container .list-group .list-group-item .bg-primary {
   margin-inline-end: 1rem;
+  border-radius: 1rem;
 }
 .info .container .row .col-lg-6 .container .list-group .list-group-item img {
   padding-inline-end: 1rem;
+}
+.info .container .row .col-lg-6 .container .list-group .list-group-item p {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

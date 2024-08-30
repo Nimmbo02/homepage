@@ -2,36 +2,46 @@
     .container {
         .row {
             .col-lg-6{
+                .bulletins{
+                    .list-group{
+                        .list-group-item{
+                            padding-top: 1.2875rem;
+                            padding-bottom: 1.2875rem;
+                        }
+                    }
+                }
                 .container {
-                    max-width: 39rem;
                     border-radius: 20px;
                     background-color: rgb(243, 244, 246);
-                    padding-inline-start: 2rem;
-                    padding-inline-end: 2rem;
+                    padding-inline-start: 1.25rem;
+                    padding-inline-end: 1.25rem;
                     padding-top: 1rem;
-                    padding-bottom: 1rem;
+                    padding-bottom: 1.25rem;
                     .title {
-                        margin-top: 1.25rem;
                         margin-bottom: 1.5rem;
                         h3 {
                             font-weight: 700;
+                            font-size: 1.5rem;
+                            line-height: 2rem;
                             margin-bottom: 0;
                         }
                     }
                     .list-group {
                         border-radius: 20px;
                         .list-group-item {
-                            min-height: 5.5rem;
-                            padding-top: 0;
-                            padding-bottom: 0;
                             border-bottom: 1px solid lightgray;
                             .bg-primary{
                                 margin-inline-end: 1rem;
+                                border-radius: 1rem;
                             }
                             img {
                                 padding-inline-end: 1rem;
                             }
-    
+                            p {
+                                font-weight: 700;
+                                font-size:1rem ;
+                                line-height:1.5rem ;
+                            }
                         }
                     }
                 }
