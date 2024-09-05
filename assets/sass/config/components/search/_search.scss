@@ -5,6 +5,7 @@
             margin-inline-end: 1rem;
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: white;
         } 
     }
     .title{
@@ -15,7 +16,7 @@
     .navbar{
         .form-inline{
             .form-control{
-                min-width: 26rem;
+                padding-inline-end: 13.7rem;
                 margin-inline-end: 1rem;
             }
         }
@@ -26,6 +27,7 @@
             font-weight: 500;
             font-size: 0.875rem;
             margin-inline-end: 0.75rem;
+            margin-top: 0.5rem;
         }
     }
 }

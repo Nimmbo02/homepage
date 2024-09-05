@@ -20297,7 +20297,7 @@ readers do not read off random characters that represent icons */
 }
 
 .homepage-card {
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.5rem;
 }
 .homepage-card .container .row {
   justify-content: center;
@@ -20336,6 +20336,7 @@ readers do not read off random characters that represent icons */
   margin-inline-end: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  background-color: white;
 }
 .search-container .title {
   font-size: 3.75rem;
@@ -20343,7 +20344,7 @@ readers do not read off random characters that represent icons */
   font-weight: 500;
 }
 .search-container .navbar .form-inline .form-control {
-  min-width: 26rem;
+  padding-inline-end: 13.7rem;
   margin-inline-end: 1rem;
 }
 .search-container .search-button .btn {
@@ -20351,6 +20352,7 @@ readers do not read off random characters that represent icons */
   font-weight: 500;
   font-size: 0.875rem;
   margin-inline-end: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .ticker {
@@ -20472,6 +20474,7 @@ readers do not read off random characters that represent icons */
   line-height: 1.125rem;
   color: white;
   padding-inline-start: 2rem;
+  margin-bottom: 0.625rem;
 }
 .title-carousel-container .owl-carousel .owl-nav,
 .title-carousel-container .owl-carousel .owl-dots {
@@ -20535,6 +20538,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 0;
 }
 .navbar .navbar-nav {
   display: flex;
@@ -20563,7 +20567,7 @@ readers do not read off random characters that represent icons */
 }
 
 .footer .container {
-  padding-top: 2rem;
+  padding-top: 0;
 }
 .footer .container .row .col-lg-3 .social img {
   padding-inline-start: 0.25rem;
@@ -20633,7 +20637,7 @@ readers do not read off random characters that represent icons */
 }
 
 .footer .container {
-  padding-top: 2rem;
+  padding-top: 0;
 }
 .footer .container .row .col-lg-3 .social img {
   padding-inline-start: 0.25rem;
@@ -20691,9 +20695,6 @@ readers do not read off random characters that represent icons */
   padding-top: 1rem;
   padding-bottom: 0.25rem;
 }
-.news .title {
-  margin-bottom: 1.5rem;
-}
 .news .title h3, .news .title .h3 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -20704,6 +20705,10 @@ readers do not read off random characters that represent icons */
   border: 0.5px solid lightgray;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-inline: 1rem;
+}
+.news .title .dropdown .dropdown-toggle::after {
+  display: none;
 }
 .news .list-group {
   border-radius: 20px;
@@ -20725,6 +20730,9 @@ readers do not read off random characters that represent icons */
   max-width: 10.3rem;
   max-height: 6rem;
 }
+.news .list-group .list-group-item .card .row .col-md-8 .card-body {
+  padding-inline-start: 0;
+}
 .news .list-group .list-group-item .card .row .col-md-8 .card-body .card-title {
   font-weight: 700;
   font-size: 1rem;
@@ -20734,11 +20742,15 @@ readers do not read off random characters that represent icons */
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
+  color: rgb(157, 164, 174);
 }
 
+.info .container .row .col-lg-6 {
+  margin-top: 0.5rem;
+}
 .info .container .row .col-lg-6 .bulletins .list-group .list-group-item {
-  padding-top: 1.2875rem;
-  padding-bottom: 1.2875rem;
+  padding-top: 1.344rem;
+  padding-bottom: 1.344rem;
 }
 .info .container .row .col-lg-6 .container {
   border-radius: 20px;
@@ -20749,7 +20761,16 @@ readers do not read off random characters that represent icons */
   padding-bottom: 1.25rem;
 }
 .info .container .row .col-lg-6 .container .title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+.info .container .row .col-lg-6 .container .title .dropdown {
+  border: 0.5px solid lightgray;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-inline: 1rem;
+}
+.info .container .row .col-lg-6 .container .title .dropdown .dropdown-toggle::after {
+  display: none;
 }
 .info .container .row .col-lg-6 .container .title h3, .info .container .row .col-lg-6 .container .title .h3 {
   font-weight: 700;
@@ -20759,9 +20780,13 @@ readers do not read off random characters that represent icons */
 }
 .info .container .row .col-lg-6 .container .list-group {
   border-radius: 20px;
+  padding-inline-start: 0;
 }
 .info .container .row .col-lg-6 .container .list-group .list-group-item {
   border-bottom: 1px solid lightgray;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .info .container .row .col-lg-6 .container .list-group .list-group-item .bg-primary {
   margin-inline-end: 1rem;
@@ -20770,8 +20795,28 @@ readers do not read off random characters that represent icons */
 .info .container .row .col-lg-6 .container .list-group .list-group-item img {
   padding-inline-end: 1rem;
 }
-.info .container .row .col-lg-6 .container .list-group .list-group-item p {
+
+.date {
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.month {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.year {
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  padding-bottom: 0.5rem;
+}
+
+.calendar .list-group .list-group-item .bg-primary {
+  padding-inline: 1.2792rem;
+  max-width: 4.3125rem;
+  max-height: 4.3125rem;
 }/*# sourceMappingURL=main.css.map */

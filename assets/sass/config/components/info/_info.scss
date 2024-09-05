@@ -1,12 +1,13 @@
 .info {
     .container {
         .row {
-            .col-lg-6{
-                .bulletins{
-                    .list-group{
-                        .list-group-item{
-                            padding-top: 1.2875rem;
-                            padding-bottom: 1.2875rem;
+            .col-lg-6 {
+                margin-top: 0.5rem;
+                .bulletins {
+                    .list-group {
+                        .list-group-item {
+                            padding-top: 1.344rem;
+                            padding-bottom: 1.344rem;
                         }
                     }
                 }
@@ -18,7 +19,16 @@
                     padding-top: 1rem;
                     padding-bottom: 1.25rem;
                     .title {
-                        margin-bottom: 1.5rem;
+                        margin-bottom: 1rem;
+                        .dropdown {
+                            border: 0.5px solid lightgray;
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                            padding-inline: 1rem;
+                            .dropdown-toggle::after {
+                                display: none;
+                            }
+                        }
                         h3 {
                             font-weight: 700;
                             font-size: 1.5rem;
@@ -28,23 +38,51 @@
                     }
                     .list-group {
                         border-radius: 20px;
+                        padding-inline-start: 0;
                         .list-group-item {
                             border-bottom: 1px solid lightgray;
-                            .bg-primary{
+                            font-weight: 700;
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                            .bg-primary {
                                 margin-inline-end: 1rem;
                                 border-radius: 1rem;
                             }
                             img {
                                 padding-inline-end: 1rem;
                             }
-                            p {
-                                font-weight: 700;
-                                font-size:1rem ;
-                                line-height:1.5rem ;
-                            }
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.date {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.month {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.year {
+    font-weight: 700;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+    padding-bottom: 0.5rem;
+}
+
+.calendar {
+    .list-group {
+        .list-group-item {
+            .bg-primary {
+                padding-inline: 1.2792rem;
+                max-width: 4.3125rem;
+                max-height: 4.3125rem;
             }
         }
     }
