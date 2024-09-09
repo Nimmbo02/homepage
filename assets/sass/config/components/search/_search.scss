@@ -32,3 +32,44 @@
     }
 }
 
+@media (max-width: 992px) {
+    /* Centering the search-container */
+    .search-container {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-dropdown {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    form.form-inline {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .search-button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    /* Centering col-lg-5 col-md-12 order-first order-md-0 order-lg-0 */
+    .col-lg-5.col-md-12.order-first.order-md-0.order-lg-0 {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Ensure the carousel inside is centered */
+    .title-carousel-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  
